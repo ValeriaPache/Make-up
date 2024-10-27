@@ -4,18 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make up Vale</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
     <header>
-        <main class="containerHeader">
-            <section class="subContainerHeader">
-                <div class="containerOne">
-                    <h1 class="tittleHeader">Make up Vale</h1>
+        <div class="logo">
+          Logo  
+        </div>
+        <div class="bolsa bi bi-cart4">
+            <span class="cuenta">0</span>
+            
+            <div class="carrito">
+                <div class="arriba">
+                    <h3>Tu carrito Esta vacio</h3>
+                    <p>Empieza a comprar ahora!</p>
                 </div>
-            </section>
-        </main>
+                <table>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div class="abajo">
+                    <div class="precio">
+                        <p>Total</p>
+                        <p id="precio">999999</p>
+                    </div>
+                    <div class="botones">
+                        <button>CHECKOUT</button>
+                        <BUtton>VIEWCARE</BUtton>
+                    </div>
+                        <a href="#" onclick="vaciar();">Vaciar Carrito</a>
+                </div>
+            </div>
+        </div>
     </header>
     
+    <div class="productos">
+        <div class="producto">
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+            <h3>polvo</h3>
+            <p>15000</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+            <h3>polvo</h3>
+            <p>15000</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+            <h3>polvo</h3>
+            <p>15000</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+            <h3>polvo</h3>
+            <p>15000</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>    
 </body>
+<script src="index.js"></script>
 </html>

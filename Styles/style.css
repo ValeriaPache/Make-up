@@ -1,35 +1,71 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-.containerHeader{
+/*                                    HEADER                                      */
+header{
     width: 100%;
-    height: 60px;
-    background-color: #000000;
+    max-width: 1000px;
+    margin: 0 auto; /*El contenedor se centra*/
+    background-color: burlywood;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: space-between;
+    align-items: center; /*centra el logo*/
 }
-.containerHeader > .subContainerHeader{
-    width: 99%;
-    height: 50px;
-    /*background-color: aliceblue;*/
-    display: flex;
-    align-items: center;
+.bolsa{
+    position: relative;
+    font-size: 22px;/*Agranda el tamaño del carrito*/
+    cursor: pointer;/*Cada vez que pasamos por encima de la bolsa vcambia la flecha a una manito*/
 }
-.subContainerHeader > .containerOne{
-    width: 20%;
-    height: 40px;
-    /*background-color: aqua;*/
-    display: flex;
-    align-items: center;
-    
-    
-}
-.containerOne > .tittleHeader{
-    font-size: 27px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/*parte del numero del carrito*/
+.cuenta{
+    width: 18px;
+    height: 18px;
+    background-color: orange;
+    font-size: 15px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid white;
+    position: absolute;
+    right: -7px; /*Sobre pone el numero encima del carrito al lado derecho*/
+    bottom: -7px; /*Hace lo mismo que el anterior pero de arriba hacia abajo*/
 }
+.carrito{
+    width: 250px;
+    height: 400px;
+    /*display: none;oculta del contenedor del carrito como si no existiera pero quda el carrito*/
+    position: absolute;
+    right: 0px;/*para que no salga del contenedor*/
+    top: 100%;
+    box-shadow: 0 0 10px blue;/*Coloca un border al contenedor donde estoy trabajando*/
+    z-index: 1;/*permite que no se vea el contenedor que este de fondo*/
+    background-color: blanchedalmond;
+    padding: 20px;/*Le coloca bordes separando las letras del limite del contenedor*/
+    border-radius: 5px;
+}
+.carrito .arriba{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(209, 136, 26);
+}
+.arriba h3{
+    font-size: 20px;/*tamaño de la letra*/
+}
+.arriba p{
+    font-size: 15px;/*tamaño de la letra*/
+}
+.carrito table{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(191, 174, 174);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/*                                    BODY                                       */
