@@ -120,11 +120,55 @@ header{
     margin-top: 300px;
 }
 .productos .producto{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 10px blue;/*Coloca un border al contenedor donde estoy trabajando*/
+    margin-bottom: 200px;
+    border-radius: 6px;
+    padding: 20px;/*Le coloca bordes separando las letras del limite del contenedor*/
+}
+.producto .imagen{
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    border-radius: 6px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.producto .imagen img{
+    width: 150px;
+    height: 90%;
     
+}
+.producto h3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.producto p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.producto button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: burlywood;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.producto button:active{
+    background-color: rgb(154, 124, 85);
 }
 .carrito{
     display: none;
 }
 .bolsa:hover .carrito{
-    display: block;/*Cada vez que yo pase el cursor por encima del carrito me aparece la ventana*/
+    display: block;
 }
