@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;/*Ajuste*/
 }
 /*                                    HEADER                                      */
 header{
@@ -38,7 +39,7 @@ header{
 }
 .carrito{
     width: 250px;
-    height: 400px;
+    height: 410px;
     /*display: none;oculta del contenedor del carrito como si no existiera pero quda el carrito*/
     position: absolute;
     right: 0px;/*para que no salga del contenedor*/
@@ -51,8 +52,8 @@ header{
 }
 .carrito .arriba{
     width: 100%;
-    height: 100px;
-    background-color: rgb(209, 136, 26);
+    height: 50px;
+    *background-color: rgb(209, 136, 26);
 }
 .arriba h3{
     font-size: 20px;/*tamaño de la letra*/
@@ -67,5 +68,63 @@ header{
     margin-top: 20px;
     border-radius: 5px;
 }
-
+.abajo{
+    width: 100%;
+}
+.abajo .precios{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px; 
+    background-color: rgb(191, 174, 174);
+    align-items: center;  
+}
+.precios p{
+    font-size: 15px;/*tamaño de la letra*/
+}
+.abajo .botones{
+    width: 100%;
+}
+.botones button{
+    padding:10px;
+    width: 100%;
+    font-size: 10px;
+    border: none;/*Para que me quite el borde del boton*/
+    background-color: rgb(195, 83, 167);/*Color del boton*/
+    border-radius: 3px;
+    color: white;/*color de la letra*/
+    margin-top: 5px;/*Separa los botones de la parte de arriba*/
+    cursor: pointer;
+}
+.botones button:active{
+    background-color: rgb(114, 28, 92);/*Cada vez que yo oprimo el boton cambia de color*/
+}
+.abajo a{
+    display: block;
+    width: 100%;
+    text-align: right;/*Pasa el texto para el lado derecho*/
+    font-size: 14px;/*Tamaño de la letra*/
+    margin-top: 10px;
+}
 /*                                    BODY                                       */
+/*   PRODUCTOS   */
+.productos{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;/*para separar las cards de los productos*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+.productos .producto{
+    
+}
+.carrito{
+    display: none;
+}
+.bolsa:hover .carrito{
+    display: block;/*Cada vez que yo pase el cursor por encima del carrito me aparece la ventana*/
+}
