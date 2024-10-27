@@ -76,7 +76,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-top: 20px; 
     background-color: rgb(191, 174, 174);
     align-items: center;  
 }
@@ -171,4 +170,25 @@ header{
 }
 .bolsa:hover .carrito{
     display: block;
+}
+.carrito table tbody {
+    display: grid;
+    overflow-y: auto;
+    max-height:300px;
+}
+.carrito table tbody tr {
+    overflow-y: auto;
+    max-height:300px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 20px;
+    justify-content:center;
+    align-items:center;
+    gap:3px;
+    padding:10px;
+}
+.carrito table tbody tr img {
+    width:45px;  
+}
+.carrito table tbody tr td {
+    font-size:13px;
 }
