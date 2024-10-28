@@ -5,75 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make up Vale</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-          Logo  
-        </div>
-        <div class="bolsa bi bi-cart4">
-            <span class="cuenta">0</span>
-            
-            <div class="carrito">
-                <div class="arriba">
-                    <h3>Tu carrito Esta vacio</h3>
-                    <p>Empieza a comprar ahora!</p>
+    <header class="containerHeader">
+        <main class="subcontainerHeader">
+            <section class="containerTittleHeader">
+                <div class="tittleHeader">
+                    Make Up Vale  
                 </div>
-                <table>
-                    <tbody>
-
-                    </tbody>
-                </table>
-                <div class="abajo">
-                    <div class="precios">
-                        <p>Total:</p>
-                        <p id="precio5">0</p>
+            </section>
+            <div class="bag bi bi-cart4">
+                <span class="account">0</span>
+                
+                <div class="cart">
+                    <div class="up">
+                        <h3>Tu carrito Esta vacio</h3>
+                        <p>Empieza a comprar ahora!</p>
                     </div>
-                    <div class="botones">
-                        <button>CHECKOUT</button>
-                        <BUtton>VIEWCART</BUtton>
-                    </div>
-                        <a href="#" id="Vaciar" OnClick="vaciar2();">Vaciar Carrito</a>
-                </div>
-            </div>
-        </div>
-    </header>
+                    <table>
+                        <tbody>
     
-    <div class="productos">
-        <div class="producto">
-            <div class="imagen">
-                <img src="Assets/img/Nailen/Nailen base liquida.png" alt="">
+                        </tbody>
+                    </table>
+                    <div class="down">
+                        <div class="price">
+                            <p>Total:</p>
+                            <p id="price5">0</p>
+                        </div>
+                        <div class="buttons">
+                            <button>CHECKOUT</button>
+                            <BUtton>VIEWCART</BUtton>
+                        </div>
+                            <a href="#" id="empty" OnClick="empty2();">Vaciar Carrito</a>
+                    </div>
+                </div>
             </div>
-            <h3>polvo</h3>
-            <p>15000</p>
-            <button>Añadir al carrito</button>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="Assets/img/Nailen/Nailen paletas de sombras.jpg" alt="">
+        </main>
+    </header>
+    <main class="containerProducts">
+        <section class="subcontainerProducts">
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Nailen/Nailen base liquida.png" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
             </div>
-            <h3>polvo</h3>
-            <p>15000</p>
-            <button>Añadir al carrito</button>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="Assets/img/Nailen/Nailen pestañina a prueba de agua.png" alt="">
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Nailen/Nailen paletas de sombras.jpg" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
             </div>
-            <h3>polvo</h3>
-            <p>15000</p>
-            <button>Añadir al carrito</button>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="Assets/img/Nailen/Nailen polvo compacto.jpg" alt="">
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Nailen/Nailen pestañina a prueba de agua.png" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
             </div>
-            <h3>polvo</h3>
-            <p>15000</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>    
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Nailen/Nailen polvo compacto.jpg" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Nailen/Nailen rubor.png" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Pestanina curvas perfectas Vogue.jpg" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue base liquida.jfif" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue brochas.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue corrector liquido.jpg" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue delineador negro.png" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue Labial liquido rojo.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue Labial Rosado.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue Lapiz de cejas.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue paleta de sombras.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Vogue/Vogue polvo compacto.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Zamy/Samy base liquida.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Zamy/Samy delineador negro.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Zamy/Samy paleta de sombras.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Zamy/Samy polvo compacto micropulverizado sin espejo.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="Assets/img/Zamy/Samy rubor individual mineral sin espejo.webp" alt="">
+                </div>
+                <h3>polvo</h3>
+                <p>15000</p>
+                <button>Añadir al carrito</button>
+            </div>
+            
+        </section>
+    </main>
+
+
+    
 </body>
 <script src="index.js"></script>
 </html>

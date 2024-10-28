@@ -5,28 +5,51 @@
     list-style: none;
     box-sizing: border-box;/*Ajuste*/
 }
-/*                                    HEADER                                      */
-header{
+.containerHeader{
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto; /*El contenedor se centra*/
-    background-color: burlywood;
-    padding: 20px;
+    height: 70px;
+    background-color: rgb(173, 139, 96);
     display: flex;
-    justify-content: space-between;
-    align-items: center; /*centra el logo*/
+    justify-content: center;
+    align-items: center;
 }
-.bolsa{
+.containerHeader > .subcontainerHeader{
+    width: 98%;
+    height: 60px;
+    *background-color: antiquewhite;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.subcontainerHeader > .containerTittleHeader{
+    width: 85%;
+    height: 50px;
+    *background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+.containerTittleHeader > .tittleHeader{
+    width: 15%;
+    height: 40px;
+    *background-color: blue;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+.bag{
     position: relative;
-    font-size: 22px;/*Agranda el tamaño del carrito*/
+    font-size: 40px;/*Agranda el tamaño del carrito*/
     cursor: pointer;/*Cada vez que pasamos por encima de la bolsa vcambia la flecha a una manito*/
 }
 /*parte del numero del carrito*/
-.cuenta{
-    width: 18px;
-    height: 18px;
+.account{
+    width: 20px;
+    height: 20px;
     background-color: orange;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     display: flex;
     align-items: center;
@@ -37,9 +60,9 @@ header{
     right: -7px; /*Sobre pone el numero encima del carrito al lado derecho*/
     bottom: -7px; /*Hace lo mismo que el anterior pero de arriba hacia abajo*/
 }
-.carrito{
-    width: 250px;
-    height: 410px;
+.cart{
+    width: 260px;
+    height: 550px;
     /*display: none;oculta del contenedor del carrito como si no existiera pero quda el carrito*/
     position: absolute;
     right: 0px;/*para que no salga del contenedor*/
@@ -50,42 +73,44 @@ header{
     padding: 20px;/*Le coloca bordes separando las letras del limite del contenedor*/
     border-radius: 5px;
 }
-.carrito .arriba{
+.cart .up{
     width: 100%;
     height: 50px;
     *background-color: rgb(209, 136, 26);
 }
-.arriba h3{
+.up h3{
     font-size: 20px;/*tamaño de la letra*/
 }
-.arriba p{
+.up p{
     font-size: 15px;/*tamaño de la letra*/
 }
-.carrito table{
+.cart table{
     width: 100%;
-    height: 150px;
+    height: 250px;
     background-color: rgb(191, 174, 174);
     margin-top: 20px;
     border-radius: 5px;
 }
-.abajo{
+.down{
     width: 100%;
 }
-.abajo .precios{
+.down .price{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-top: 20px; 
     background-color: rgb(191, 174, 174);
     align-items: center;  
+    border-radius: 5px;
 }
-.precios p{
+.price p{
     font-size: 15px;/*tamaño de la letra*/
 }
-.abajo .botones{
+.down .buttons{
     width: 100%;
 }
-.botones button{
+.buttons button{
     padding:10px;
     width: 100%;
     font-size: 10px;
@@ -96,37 +121,54 @@ header{
     margin-top: 5px;/*Separa los botones de la parte de arriba*/
     cursor: pointer;
 }
-.botones button:active{
+.buttons button:active{
     background-color: rgb(114, 28, 92);/*Cada vez que yo oprimo el boton cambia de color*/
 }
-.abajo a{
+.down a{
     display: block;
     width: 100%;
     text-align: right;/*Pasa el texto para el lado derecho*/
     font-size: 14px;/*Tamaño de la letra*/
     margin-top: 10px;
 }
-/*                                    BODY                                       */
-/*   PRODUCTOS   */
-.productos{
+.cart{
+    display: none; /*Desaparece el contenedorde la bolsa*/
+}
+.bag:hover .cart{
+    display: block; /*Aparece el contenedor de la bolsa casa ver que paso el cursor por encima de la bolsa*/
+}
+
+
+
+
+/*                                PRODUCTS                                */
+
+.containerProducts{
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    height: 1300px;
+    background-color: aqua;
     display: flex;
-    gap: 30px;/*para separar las cards de los productos*/
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
 }
-.productos .producto{
+.containerProducts > .subcontainerProducts{
+    width: 85%;
+    height: 1270px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subcontainerProducts > .product{
     width: 200px;
-    height: 300px;
+    height: 280px;
     box-shadow: 0 0 10px blue;/*Coloca un border al contenedor donde estoy trabajando*/
-    margin-bottom: 200px;
     border-radius: 6px;
     padding: 20px;/*Le coloca bordes separando las letras del limite del contenedor*/
+    margin-top: 20px;
 }
-.producto .imagen{
+.product .image{
     width: 100%;
     height: 150px;
     background-color: gray;
@@ -136,23 +178,23 @@ header{
     justify-content: center;
     align-items: center;
 }
-.producto .imagen img{
+.product .image img{
     width: 150px;
     height: 90%;
     
 }
-.producto h3{
+.product h3{
     text-align: center;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.producto p{
+.product p{
     text-align: center;
     margin-top: 10px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.producto button{
+.product button{
     width: 100%;
     padding: 5px;
     border-radius: 4px;
@@ -162,21 +204,15 @@ header{
     margin-top: 10px;
     cursor: pointer;
 }
-.producto button:active{
+.product button:active{
     background-color: rgb(154, 124, 85);
 }
-.carrito{
-    display: none;
-}
-.bolsa:hover .carrito{
-    display: block;
-}
-.carrito table tbody {
+.cart table tbody {
     display: grid;
     overflow-y: auto;
     max-height:300px;
 }
-.carrito table tbody tr {
+.cart table tbody tr {
     overflow-y: auto;
     max-height:300px;
     display:grid;
@@ -186,9 +222,9 @@ header{
     gap:3px;
     padding:10px;
 }
-.carrito table tbody tr img {
+.cart table tbody tr img {
     width:45px;  
 }
-.carrito table tbody tr td {
+.cart table tbody tr td {
     font-size:13px;
 }
